@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8"> 
+    <title>Tourism of India</title>
+<style>
+*{
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  background-image: url(https://images.unsplash.com/photo-1580508244245-c446ca981a6b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmFja2dyb3VuZCUyMGltYWdlJTIwZm9yJTIwd2Vic2l0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: sans-serif;
+}
+nav .logo{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 80px;
+  padding-left: 600px;
+}
+nav{
+  height: 80px;
+  background: #063247;
+  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+}
+nav ul{
+  float: right;
+  margin-right: 8px;
+  margin-top: 3px; 
+  margin-bottom: 10px; 
+}
+nav ul li{
+  display: inline-block;
+}
+nav ul li a{
+  color: white;
+  display: block;
+  padding: 0 15px;
+  line-height: 60px;
+  font-size: 22px;
+  background: #063247;
+  transition: .5s;
+}
+nav ul li a:hover,
+nav ul li a.active{
+  color: #23dbdb;
+}
+nav ul ul{
+  position: absolute;
+  top: 85px;
+  border-top: 3px solid #23dbdb;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+}
+nav ul ul li{
+  width: 300px;
+  display: list-item;
+  position: relative;
+  border: 1px solid #042331;
+  border-top: none;
+}
+nav ul ul li a{
+  line-height: 60px;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+nav ul ul li a i{
+  margin-left: 45px;
+}
+
+
+
+
+
+
+(max-width: 800px){
+.column.side, .column.middle,.column.side {
+    width: 100%;
+  }
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+  background-color: #e0ebeb;
+  position: -webkit-sticky;
+  position: sticky; 
+  top: 0;
+}
+
+/* Middle column */
+.column.middle {
+  width: 48%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both; 
+} 
+
+img {
+  border-radius: 50px;
+}
+
+a {
+  color:blue;
+}
+
+h1 {
+  font-size: 60px;
+  color: #ff0066;
+  font-family: Consolas;
+  text-align: center;
+}
+
+
+
+
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
+footer .row{
+  display: flex;
+  flex-wrap: wrap;
+}
+footer ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col{
+  width: 25%;
+}
+.footer-col h4{
+  font-size: 23px;
+  color: #ffb3ff;
+  margin-bottom: 35px;
+  font-weight: 500;
+  text-decoration: #ffb3ff underline;
+}
+.footer-col h4::before{
+  content: '';
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+</style>
+
+</head>
+<body>
+    <nav>
+       <label class="logo">Tourism of India</label>
+        <ul>
+         <li><a class="active" href="home.html">Home</a></li>
+           <li><a href="food.html">Food Court</a></li>
+          <li>
+             <a href="#">Destination▼
+               <i class="fas fa-caret-down"></i>
+              </a>
+               <ul>
+                  <li><a href="adventure.html">Adventourous Places</a></li>
+                  <li><a href="beach.html">Beaches</a></li>
+                  <li><a href="historical.html">Historical Places</a></li>
+                  <li><a href="hillstation.html">Hill Station</a></li>
+                  <li><a href="wildlife.html">Wild Life</a></li>
+               </ul>
+           </li>
+
+           <li>
+              <a href="#">Booking▼
+                <i class="fas fa-caret-down"></i>
+              </a>
+               <ul>
+                  <li><a href="bus booking.html">Bus Booking</a></li>
+                  <li><a href="train booking.html">Train Booking</a></li>
+                  <li><a href="flight booking.html">Flight Booking</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="#">Travel By▼
+               <i class="fas fa-caret-down"></i>
+               </a>
+               <ul>
+                  <li><a href="month wise.html">Travel by Month</a></li>
+                  <li><a href="season wise.html">Travel by Season</a></li>
+               </ul>
+            </li>
+            <li><a href="culture.html">Indian Culture</a></li>
+            <li><a href="international.html">International Visit</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="about us.html">About Us</a></li>
+         </ul>
+    </nav>
+
+  
+
+
+
+
+<br><br><div class="row">
+  <div class="column side">
+    <center><h2>Advertisement</h2></center>
+    <center><img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGFkdmVydGlzaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="ad fb.jpg" width="300px" height="250px"></center><br>
+ 
+       <center><a href="https://www.facebook.com/">Visit Facebook page!!!</a><br>
+       <img src="https://images.unsplash.com/photo-1662947852375-0d45b28ff623?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGZiJTIwbG9nb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="fb.jpg" width="50px" height="50px"><br>
+       <a href="https://www.youtube.com/">Visit Youtube page!!!</a><br>
+       <img src="https://media.istockphoto.com/id/1348212541/photo/red-play-icon-button-on-white-background-social-media-and-sign-concept-3d-illustration.jpg?b=1&s=170667a&w=0&k=20&c=-8wc9kvDbL1P-j-1I5cpFDIo9z_mISgylwYdfDzy138=" alt="youtube.jpg" width="50px" height="50px"><br>
+       <a href="https://www.twitter.com/">Visit Twitter page!!!</a><br>
+       <img src="https://images.unsplash.com/photo-1660303238885-c9853ddb6feb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHR3aXR0ZXIlMjBsb2dvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="twitter.jpg" width="50px" height="50px"><br>
+       <a href="https://www.instagram.com/">Visit Instagram page!!!</a><br>
+       <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8eW91dHViZSUyMGxvZ298ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="instagram.jpg" width="50px" height="50px"><br>
+       <img src="https://media.istockphoto.com/id/1008450554/photo/close-up-of-hands-stitch-cloths.jpg?s=612x612&w=0&k=20&c=xsA1uiWeHBeKf_g9JJ5I_Mmfq2BZEAWqXs84RNnL32s=" alt="fashion.jpg" width="250px" height="200px"><br></center><br>
+
+  </div>
+ 
+  <div class="column middle">
+       <center><h1>Tourism</h1></center>
+       <center><img src="https://media.istockphoto.com/id/867757922/photo/collage-of-india-images-travel-background.jpg?s=612x612&w=0&k=20&c=YjReBpVFzAl_80_CzYUled4nurzB-FScIUs5eWjdm_M=" alt="mid1.jpg" width="450px" height="400px"></center><br><br>
+       <p style="font-size:40px; text-align:center; font-family:italic;">"The World is a book and those who do not TRAVEL read only one page" </p>
+        
+       <marquee><img src="https://images.unsplash.com/photo-1524842495237-6abc737eae1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHRyYXZlbCUyMHFvdXRlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="homeig1.jpg" width="300px" height="250px"><img src="https://media.istockphoto.com/id/1007530412/photo/motivational-and-inspirational-quote.jpg?b=1&s=170667a&w=0&k=20&c=o1c1KvItwuAzZoWV6cPQ94Vg_pThhrSSv31jiSH9xbM=" alt="homeig2" width="300px" height="250px"><img src="https://media.istockphoto.com/id/695645186/photo/travel-inspirational-quotes.jpg?s=612x612&w=0&k=20&c=_mnl5wJE1pjbID70gsULyt4Lj1UnLAY7tsowaODEsXU=" alt="homeig3" width="300px" height="250px"></marquee>
+       <p style="font-size:30px;font-family:italic;">Tourists are drawn to India because of its welcoming customs, diverse way of life, cultural legacy, and vibrant fairs and festivals. From the beginning, the kings of various regions of India constructed opulent palaces, magnificent temples, evergreen gardens, lofty forts, and graves. Tourism-friendly natural and cultural settings abound in India. Some of India's tourist attractions include its stunning beaches, animals, national parks, sanctuaries, snow-covered mountains, rivers, and mountain peaks, as well as its technical parks and places of worship. Tourists are drawn to historical trains, yoga, meditation, Ayurveda, Siddha, and natural health resorts.</p>
+       
+       <p style="color:indigo; font-size:35px;font-family:italic;">Adventure</p>
+       <marquee direction="right"><img src="https://media.istockphoto.com/id/869594152/photo/hot-balloon-air-over-jispa-town-lahaul-valley-himachal-pradesh-india.jpg?s=612x612&w=0&k=20&c=4vE_Kpmret483LaEketN2d1ra8brW58by180arixnb4=" alt="adventure1.jpg" width="300px" height="250px"><img src="https://media.istockphoto.com/id/928252416/photo/young-woman-enjoying-fresh-air-near-stream-in-pine-jungle.jpg?s=612x612&w=0&k=20&c=dsTkPVg4c_UzKW3yve5zKMfYcLSf4-WnMl77DeuqpNA=" alt="adventure2.jpg" width="300px" height="250px"><img src="https://media.istockphoto.com/id/507897394/photo/skydiving-photo.jpg?s=612x612&w=0&k=20&c=7tC8NzYC88ZKPGEqe1QLoPGvKc3JTBhDAO4WnbqmK_w=" alt="adventure3.jpg" width="300px" height="250px"><img src="https://media.istockphoto.com/id/182174760/photo/bungee-jump.jpg?s=612x612&w=0&k=20&c=5uCbzj694BXwSOG-OpCSNXFHq2KfyFWtUCFyzjg4FhY=" alt="adventure4.jpg" width="300px" height="250px"><img src="https://media.istockphoto.com/id/172760258/photo/rafting-on-white-water-in-a-storm.jpg?s=612x612&w=0&k=20&c=WrAAj85uE8ufg_yrXbx6UxwX5KCzLql7oTypWdbnjRc=" alt="adventure5.jpg" width="300px" height="250px"></marquee>
+       <p style="font-size:30px;font-family:italic;">Bestowed with towering peaks and mountains, fascinating rivers, challenging terrains and other natural marvels, India has become an epitome of adventure sports in the world. Be it on the east, west, north or south, the country has ample of options that offer the desired adrenaline kicks to the adventure junkies!</p>
+
+       <p style="color:indigo; font-size:30px;font-family:italic;">Beaches</p>
+       <marquee direction="right"><img src="https://media.istockphoto.com/id/503760697/photo/landscape-goa.jpg?s=612x612&w=0&k=20&c=MY7cuDM5KW1fk1FyRuyf7nGrfP1dWOVh9VzXgWg2EJg=" alt="beach1.jpg" width="300px" height="250px"><img src="https://media.istockphoto.com/id/1296651608/photo/sunset-at-mandvi-beach-kutch.jpg?s=612x612&w=0&k=20&c=ErGkZRGKypv6mGK48r5hhtn9oyEWOMDo2XXcYvPdyBs=" alt="beach2.jpg" width="300px" height="250px"><img src="https://media.istockphoto.com/id/480488320/photo/varkala-beach.jpg?s=612x612&w=0&k=20&c=5SYA2c16CxBsFo_DHEM0nF21n3ZeUpImpYkqnGzHTUU=" alt="beach3.jpg" width="300px" height="250px"><img src="https://media.istockphoto.com/id/1373270430/photo/aerial-image-of-benaulim-beach-south-goa-india.jpg?s=612x612&w=0&k=20&c=sfhZRch7GcAl9X2fQenuLSNmfSikvfWrPagaEJv4-P8=" alt="beach4.jpg" width="300px" height="250px"><img src="https://media.istockphoto.com/id/1094387460/photo/night-beach-party-in-goa.jpg?s=612x612&w=0&k=20&c=90oHFh3klXfMASU5t0za7OyFde5FMLA9i_kB3mi37sM=" alt="beach5.jpg" width="300px" height="250px"></marquee>
+       <p style="font-size:30px;font-family:italic;">Those who are looking for some respite from the daily grind and want to soothe and nourish their soul, there are many beautiful beaches in India waiting to be explored. Some are scenic, some are quiet, and others promise tons of fun. If you love walking on warm sands, splashing in cool waters, or simply lazing around and breathing in the salty breeze, read on to know more and plan that perfect beach vacation!</p>
+
+
+       <p style="color:indigo; font-size:30px;font-family:italic;">Historical Places</p>
+       <marquee direction="right"><img src="https://media.istockphoto.com/id/1368499817/photo/albert-hall-jaipur.jpg?s=612x612&w=0&k=20&c=qW09-AUBDRLKadKGYhatNNnKpADuA6AMwwvWJc9IMVs=" alt="hist1.jpg" width="300px" height="250px"><img src="https://media.istockphoto.com/id/1395028664/photo/jahaz-mahal-mandav-dhar-madhya-pradesh.jpg?s=612x612&w=0&k=20&c=h6YfmXtpi3hpv2tKNx6FTBg3hw1GxgzIe3FwSB58bIs=" alt="hist2.jpg" width="300px" height="250px"><img src="https://media.istockphoto.com/id/623586586/photo/taj-mahal-agra-uttar-pradesh-rajasthan-india-asia.jpg?s=612x612&w=0&k=20&c=8V5A2bx2y4w9qiBx9AA2wUHvH_k0MoKmEtflxZEuI3s=" alt="hist3.jpg" width="300px" height="250px"><img src="https://media.istockphoto.com/id/544802998/photo/meenakshi-amman-temple-madurai.jpg?s=612x612&w=0&k=20&c=AefQcx4YAISIu2Yz9fl42-a9yXsWU291pzRI7YGpniM=" alt="hist4.jpg" width="300px" height="250px"><img src="https://media.istockphoto.com/id/614243374/photo/maharajahs-palace-in-mysore.jpg?s=612x612&w=0&k=20&c=Yy3F7DPjI627IEfJwa-Q0nKWlfSlNv2kxe4LSTUU5lk=" alt="hist5.jpg" width="300px" height="250px"></marquee>
+       <p style="font-size:30px;font-family:italic;">Opulent palaces, ancient forts and majestic structures greet you at every nook and corner of this majestic country. This rich history oozes out of all ancient structures and famous historical monuments in India, and depicts tales of romance, bravery, strength and battles. Also, there is no reason to research each time you are looking for historical places information.You can always refer to the following list of famous historical places in India.</p>
+ 
+      <p style="color:indigo; font-size:30px;font-family:italic;">Hill stations</p> 
+      <marquee direction="right"><img src="https://media.istockphoto.com/id/475836292/photo/clouds-rolling-between-hills-of-himachal.jpg?s=612x612&w=0&k=20&c=orTwGIhfXYnJPMpnkq70AL5IQPSLj0XeLVgn-EjjdyM=" alt="hill1.jpg" width="300px" height="250px"><img src="https://media.istockphoto.com/id/1206473179/photo/mount-abu-hill-station-india.jpg?s=612x612&w=0&k=20&c=Fhf8cRmWE_qsyIzRDUgbM9B_8GQhqpO84Z04UyqQJOw=" alt="Hill2.jpg" width="300px" height="250px"><img src="https://media.istockphoto.com/id/1248778210/photo/kalpa-town-aerial-panoramic-view-india.jpg?s=612x612&w=0&k=20&c=WELzCqZHr-_ObWbZchybI49m5Sp4hSYXvvBFYTR2fWs=" alt="hill3.jpg" width="300px" height="250px"><img src="https://media.istockphoto.com/id/615235922/photo/view-of-gurtnellen-a-village-in-swiss-alps.jpg?s=612x612&w=0&k=20&c=ADdj2DQy4LnOAYjfSOsnoSakuBkyGsyUjfUGeLlcwxo=" alt="hill4.jpg" width="300px" height="250px"><img src="https://media.istockphoto.com/id/1248778207/photo/bhimakali-temple-in-sarahan-india.jpg?s=612x612&w=0&k=20&c=FSlK6OW_1Mz8EpCwcEr5HzGZHY4bW0_Y7B6nOgeGyls=" alt="hill5.jpg" width="300px" height="250px"></marquee>        
+      <p style="font-size:30px;font-family:italic;"> A hill station is a town located at a higher elevation than the nearby plain or valley. The term was used mostly in colonial Asia (particularly India), but also in Africa (albeit rarely), for towns founded by European colonial rulers as refuges from the summer heat, up where temperatures are cooler.</p> 
+
+      <p style="color:indigo; font-size:30px;font-family:italic;">Wildlife</p>
+      <marquee direction="right"><img src="https://media.istockphoto.com/id/949472768/photo/tiger-portrait.jpg?s=612x612&w=0&k=20&c=cPI-hIwXxLwRYcGW3HaC_3C6J_MMIE_BbMjI9Ac0XNE=" alt="wild1.jpg" width="300px" height="250px"><img src="https://media.istockphoto.com/id/588614058/photo/elephants-in-the-forest.jpg?s=612x612&w=0&k=20&c=k03zhtm9WS5a3Jgn46X2UEzbG_cmuFJHrZflZg2y6O4=" alt="wild2.jpg" width="300px" height="250px"><img src="https://media.istockphoto.com/id/1390060388/photo/spotted-deer-or-chital-or-axis-deer-herd-or-family-in-wild-natural-green-scenic-background-in.jpg?s=612x612&w=0&k=20&c=KX2uYna-i8Qk5CEfNt5SglJQujw91p3TuoqJppZ5iGA=" alt="wild3.jpg" width="300px" height="250px"><img src="https://media.istockphoto.com/id/1139627781/photo/greater-flamingo-flock-in-natural-habitat-in-a-early-morning-hour-during-monsoon-season-a.jpg?s=612x612&w=0&k=20&c=c2mhgMM35OwVkC-eP3IecbjoR0RzYZsWGHdDnc6aWfA=" alt="wild4.jpg" width="300px" height="250px"><img src="https://media.istockphoto.com/id/492611032/photo/the-african-king.jpg?s=612x612&w=0&k=20&c=SPP0WTaFwSTmB_QX7WrWbVBPXiKTg4e8ArZrUAo2G6k=" alt="wild5.jpg" width="300px" height="250px"></marquee> 
+      <p style="font-size:30px;font-family:italic;">India lies within the Indomalayan realm and is the home to about 7.6% of mammal, 14.7% of amphibian, 6% of bird, 6.2% of reptilian, and 6.2% of flowering plant species. India's forest lands nurture about 500 species of mammals and more than 2000 bird species.</p>
+
+ </div>
+
+
+ <div class="column side">
+    <center><h2>Advertisement</h2></center>
+    <center><img src="https://media.istockphoto.com/id/639389404/photo/authentic-indian-food.jpg?s=612x612&w=0&k=20&c=gbfAu17L1gtHmuo5biByhfCefAtYUtGQpyxMmi9_Mus=" alt="hotel.jpg" width="300px" height="250px"><br>
+    <a href="https://www.zomato.com/">Visit Zomato website!!!</a><br>
+    <img src="https://media.istockphoto.com/id/1358081422/photo/hawaiian-pizza-pesto-angpao-pizza-margherita-pizza-bacon-ham-spinach-pizza-italian-pork.jpg?s=612x612&w=0&k=20&c=Hsm5A_tgvr_DHVOvpseEFa1okr4k_5SGtcOM3bXxio4=" alt="zomato.jpg" width="50px" height="50px"><br>
+    <a href="https://www.swiggy.com/">Visit Swiggy website!!!</a><br>
+    <img src="https://media.istockphoto.com/id/1342289986/photo/traditional-guatemalan-dish.jpg?b=1&s=170667a&w=0&k=20&c=iiCBurY6k7yL4SMOFEdoXovxWfKbaVRBnz_xyZy_1Oo=" alt="swiggy.jpg" width="50px" height="50px"><br>
+    <a href="https://www.freshmenu.com/">Visit Fresh Menu website!!!</a><br>
+    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" alt="fresh.jpg" width="50px" height="50px"><br>
+    <a href="https://www.food.com/">Visit Food website!!!</a><br>
+    <img src="https://media.istockphoto.com/id/1348369752/photo/seamless-food-background-made-of-opened-canned-food.jpg?b=1&s=170667a&w=0&k=20&c=ABKIo_YTxsZbiotKkpAXOG9yn69YbfVgdob04oRDLPY=" alt="foodcow.jpg" width="50px" height="50px"><br>
+    <img src="https://media.istockphoto.com/id/1198056417/photo/necklace-with-pearl-display-in-jewelry-store.jpg?s=612x612&w=0&k=20&c=fTeXsA8YBR7PmLoREn7NuizRzmJXsDzV2_B9rrjL4ps=" alt="jewe.jpg" width="300px" height="200px"></center>   
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<footer class="footer">
+   <div class="container">
+  	 <div class="row">
+              <div class="footer-col">
+  	 	     <h4>Quick Links</h4>
+  	 		<ul>
+  	 		<li><a href="food.html">Food Court</a></li>
+  	 		<li><a href="bus booking.html">Booking</a></li>
+  	 		<li><a href="international.html">International Visit</a></li>
+  	 		<li><a href="culture.html">Indian Culture</a></li>
+  	 		<li><a href="about us.html">About US</a></li>
+  	 		</ul>
+  	       </div>
+               <div class="footer-col">
+  	 	   <h4>Top Destinations</h4>
+  	 	        <ul>
+  	 		<li><a href="https://www.coorgtourisminfo.com/about-coorg/">Coorg</a></li>
+  	 		<li><a href="https://himachaltourism.gov.in/destination/shimla/">Shimla</a></li>
+  	 		<li><a href="https://agra.nic.in/tourism/">Agra</a></li>
+  	 		<li><a href="https://ootytourism.co.in/sightseeing-places-to-visit-in-ooty">Ooty</a></li>
+                        <li><a href="https://www.tripadvisor.in/Attraction_Review-g297685-d19685174-Reviews-Varanasi_local_sightseeing_Tour-Varanasi_Varanasi_District_Uttar_Pradesh.html">Varanasi</a></li>
+  	 		</ul>
+  	 	</div>
+  	        <div class="footer-col">
+  	 	     <h4>About Us</h4>
+  	 		<ul>
+  	 		<li><a href="#">"Tourism of India"</a></li>
+  	 		<li><a href="#"><b>Phone No.: </b>8618066381</a></li>
+  	 		<li><a href="#"><b>Email Id: </b>tourism@gmail.com</a></li>
+  	 		<li><a href="#"><b>Fax Id: </b>123-456-7890</a></li>
+  	 		</ul>
+  	 	</div>
+  	 	<div class="footer-col">
+  	 	     <h4>Follow Us</h4>
+                        <img src="https://images.unsplash.com/photo-1662947852375-0d45b28ff623?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGZiJTIwbG9nb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="fb.jpg" width="50px" height="50px">
+                        <img src="https://media.istockphoto.com/id/1348212541/photo/red-play-icon-button-on-white-background-social-media-and-sign-concept-3d-illustration.jpg?b=1&s=170667a&w=0&k=20&c=-8wc9kvDbL1P-j-1I5cpFDIo9z_mISgylwYdfDzy138=" alt="youtube.jpg" width="50px" height="50px">
+                        <img src="https://images.unsplash.com/photo-1660303238885-c9853ddb6feb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHR3aXR0ZXIlMjBsb2dvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="twitter.jpg" width="50px" height="50px">
+                        <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8eW91dHViZSUyMGxvZ298ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="instagram.jpg" width="50px" height="50px"><br>
+                        <ul>
+  	 		<li><a href="https://www.facebook.com/">Facebook</a></li>
+  	 		<li><a href="https://www.youtube.com/">Youtube</a></li>
+  	 		<li><a href="https://www.twitter.com/">Twitter</a></li>
+  	 		<li><a href="https://www.instagram.com/">Instagram</a></li>
+  	 		</ul>
+  	 	</div>
+  	 </div>
+    </div>
+</footer>
+</body>
+</html> 
