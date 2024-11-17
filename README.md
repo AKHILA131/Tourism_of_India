@@ -1,3 +1,1 @@
-# Tourism_of_India
- "HTML, CSS, and JavaScript are the core technologies used in the Tourism_of_India project to build a responsive and informative web application."
-
+Introducing "Tourism_of_India", a comprehensive web application guiding travelers to India's iconic tourist destinations. Our platform provides expert recommendations on the best times to visit, ensuring unforgettable experiences. Users can seamlessly book flights, trains, buses, and accommodations, making trip planning effortless. With [Project Name], explore India's vibrant culture, breathtaking landscapes, and rich heritage with confidence and convenience.
